@@ -32,6 +32,6 @@ jobs:
             docker build -t
          ${{ secrets.DOCKER_USERNAME }}/
          cicd-demo:latest .
-            docker push $
+            docker push
          ${{ secrets.DOCKER_USERNAME }}/
          cicd-demo:latest

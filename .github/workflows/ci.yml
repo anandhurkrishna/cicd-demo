@@ -30,8 +30,8 @@ jobs:
         - name: Build and push Docker Image
           run: |
             docker build -t $
-       {{ secrets.DOCKER_USERNAME }}/
-       cicd-demo: latest .
+         {{ secrets.DOCKER_USERNAME }}/
+         cicd-demo:latest .
             docker push $
-       {{ secrets.DOCKER_USERNAME }}/
-       cicd-demo: latest
+         {{ secrets.DOCKER_USERNAME }}/
+         cicd-demo:latest
